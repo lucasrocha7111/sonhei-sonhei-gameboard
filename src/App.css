@@ -1,0 +1,45 @@
+body {
+  background: #f0f0f0;
+  overflow-x: hidden;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 60%; /* Ajuste essa altura conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+  bottom: 0px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  will-change: transform;
+  cursor: grab;
+  position: absolute; /* Para empilhar as cartas */
+  z-index: 1;
+}
+
+.card:active {
+  cursor: grabbing;
+}
